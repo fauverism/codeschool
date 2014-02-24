@@ -1,8 +1,12 @@
 //JS Roadtrip Part3
 
 //1
+
+//1.5
 var fear = fearGenerated(numPeeps, rainInInches, numSharks);
-var fearMessage;
+var fearMessage = function() {
+
+};
 
 //For fear levels less than 200
 var low = function() {
@@ -19,14 +23,8 @@ var high = function() {
   prompt("Fear Level: HIGH ABANDON ALL HOPE!! Have a death wish?");
 };
 
-var fearMessage = function() {
-};
-
-confirmRide(fearMessage);
-
-function confirmRide( confirmToGo ){
+function confirmRide( confirmToGo, fearMessage ){
   return confirmToGo();
 }
 
-var startRide = function() {
-};
+var startRide = confirmRide();
